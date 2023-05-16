@@ -239,6 +239,7 @@ main .business-plans .col-4{
 
 main .business-plans:nth-of-type(4){
     border-bottom: 1px solid black;
+    margin-bottom: 30px;
 }
 main .business-plans .col-4 > h4{
     text-align: center;
@@ -294,15 +295,42 @@ main .business-plans .fa-check{
     line-height: 20px;
 }
 
+/* CONTACT US */
 
+.contact{
+    border: 1px solid black;
+}
 
+.contact > h4{
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
 
+.contact .col-8{
+   padding: 50px;
+}
 
+.contact .col-4{
+   padding: 50px;
+   text-align: right;
+}
 
+.contact .col-8 h3{
+    padding-bottom: 5px; 
+    font-size: 1.3em;
+}
 
-/* TEAM */
+.contact .col-8 h3 + div{
+    font-weight: 700;
+    margin-bottom: 50px;
+}
 
-
+.contact .col-8 p{
+    font-size: 0.8em;
+}
 
 
 /* 
