@@ -374,6 +374,49 @@ main .business-plans .fa-check{
     font-size: 1.2em;
 }
 
+/* DROPBOX BUSINESS */
+
+.dp-bsn{
+    margin-bottom: 200px;
+    
+}
+
+.dp-bsn-title{
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.dp-bsn .col-4{
+    padding: 20px;
+}
+
+.dp-bsn .col-4 h3{
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.dp-bsn .col-4 p{
+    margin-bottom: 30px;
+}
+
+.my-row .col-8{
+    margin-bottom: 100px;
+}
+
+.my-row .col-8 > h2{
+    font-size: 3em;
+}
+
+.my-row .col-8 > a{
+    color: #2F86FF; 
+}
+
+.my-row .col-8 > a:visited{
+    color: #2F86FF; 
+}
+
+
+/* PARTNER COMPANIES */
 /* 
     FOOTER
 */
@@ -385,22 +428,11 @@ footer{
 .full-width{
     background-color: #000000;
 }
+
 /* 
     DEBUG
 */
 
-.debug main h3 + div > div{
-    background-color:lightgreen;
-    min-height: 200px;
-    border: 2px dashed black;
-}
-
-
-.debug main h2:nth-of-type(2) + div > div{
-    background-color:aquamarine;
-    min-height: 200px;
-    border: 2px dashed black;
-}
 
 .debug main .full-width:nth-of-type(2) div > div{
     background-color:lightgreen;
