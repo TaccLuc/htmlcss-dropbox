@@ -112,6 +112,43 @@ header li a:hover{
     color:#2F86FF;
 }
 
+/* 
+    MAIN
+*/
+
+main h1{
+    font-size: 5em;
+}
+
+main img{
+    width: 100%;
+}
+
+main .container{
+    padding: 20px;
+}
+
+.jumbotron{
+    position: relative;
+    top: 100px;
+}
+
+main .full-width:first-of-type{
+    background-color: #B4D0E7;
+    margin-bottom: 100px;
+}
+
+main .full-width:first-of-type button{
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
 
 /* 
     FOOTER
@@ -127,17 +164,6 @@ footer{
 /* 
     DEBUG
 */
-
-.debug main .full-width{
-    width: 100%;
-    min-height: 200px;
-    background-color: aquamarine;
-}
-
-.debug main .full-width .container{
-    min-height: 200px;
-    border: 2px dashed black;
-}
 
 .debug main .container .radio-input + .my-row > .col-4{
     background-color: burlywood;
