@@ -35,8 +35,16 @@ body{
     width: calc((100% / 12) * 4)
 }
 
+.col-5{
+    width: calc((100% / 12) * 5)
+}
+
 .col-6{
     width: calc((100% / 12) * 6)
+}
+
+.col-7{
+    width: calc((100% / 12) * 7)
 }
 
 .col-8{
@@ -96,7 +104,7 @@ body{
     border: none;
     cursor: pointer;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
 }
 
 .download-button:hover{
@@ -113,6 +121,7 @@ header{
     top: 0;
     z-index: 999;
     background-color: white;
+    border-bottom: 1px solid #B4D0E7;
 }
 
 header .my-row > div{
@@ -299,6 +308,7 @@ main .business-plans .fa-check{
 
 .contact{
     border: 1px solid black;
+    margin-bottom: 150px;
 }
 
 .contact > h4{
@@ -332,6 +342,37 @@ main .business-plans .fa-check{
     font-size: 0.8em;
 }
 
+/* PARTNER */
+
+.partner{
+    margin-bottom: 150px;
+}
+
+.partner .col-7{
+    padding: 20px 20px 20px 0;
+}
+
+.partner .col-5{
+    padding: 20px;
+}
+
+.partner .col-5 h3{
+    padding: 20px;
+    font-size: 2em;
+}
+
+.partner .col-5 p{
+    padding: 20px;
+}
+
+.partner .col-5 div{
+    padding: 20px;
+}
+
+.partner .col-5 div button{
+    border: 1px solid black;
+    font-size: 1.2em;
+}
 
 /* 
     FOOTER
