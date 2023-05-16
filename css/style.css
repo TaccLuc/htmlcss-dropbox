@@ -67,6 +67,19 @@ body{
 .button-white:hover{
     background-color: rgb(238, 235, 235);
 }
+
+.download-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px;
+}
+
+.download-button:hover{
+    background-color: rgb(238, 235, 235);
+}
+
 /* 
     HEADER
 */
@@ -112,6 +125,16 @@ header li a:hover{
     color:#2F86FF;
 }
 
+.circle{
+    border: 1px solid black;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
 /* 
     MAIN
 */
@@ -127,6 +150,8 @@ main img{
 main .container{
     padding: 20px;
 }
+
+/* JUMBOTRON */
 
 .jumbotron{
     position: relative;
@@ -144,7 +169,41 @@ main .full-width:first-of-type button{
     padding: 10px 20px;
 }
 
+main .full-width:first-of-type i{
+   font-size: 3em;
+}
 
+/* BUSINESS PLANS */
+
+main h2:first-of-type{
+    font-size: 2.5em;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+main .radio-input{
+    margin-bottom: 50px;
+}
+
+main .radio-input input{
+    display: none;
+}
+
+main .radio-input label{
+    cursor: pointer;
+}
+
+main .radio-input label:first-of-type{
+    margin-right: 30px;
+}
+
+main .radio-input #monthly:checked ~ .circle:first-of-type{
+    border: 3px solid #2F86FF;
+}
+
+main .radio-input #yearly:checked ~ .circle:last-of-type{
+    border: 3px solid #2F86FF;
+}
 
 
 
