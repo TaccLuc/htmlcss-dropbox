@@ -555,12 +555,33 @@ main .faq div:last-of-type hr:last-of-type{
     margin-bottom: 100px;
 }
 
-main .faq span{
+main .faq input{
+    display: none;
+}
+
+main .faq .fa-chevron-down{
     float: right;
     margin-right: 30px;
     font-size: 0.8em;
     cursor: pointer;
 }
+
+main .faq ul{
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+main .faq input:checked ~ ul{
+    max-height: 300px;
+}
+
+main .faq ul li{
+    padding: 10px 0;
+    margin-left: 60px;
+}
+
 
 /* 
     FOOTER
