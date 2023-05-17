@@ -448,11 +448,9 @@ main .companies .col-4 .my-row .col-6 img{
     filter: invert(1);
     width: 50%;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 main .companies .col-4:first-of-type .my-row .col-6:first-of-type{
