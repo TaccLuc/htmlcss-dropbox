@@ -564,6 +564,11 @@ main .faq .fa-chevron-down{
     margin-right: 30px;
     font-size: 0.8em;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: rotation-down;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 main .faq ul{
@@ -577,11 +582,37 @@ main .faq input:checked ~ ul{
     max-height: 300px;
 }
 
+main .faq input:checked ~ label > i{
+    animation: rotation-up;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 main .faq ul li{
     padding: 10px 0;
     margin-left: 60px;
 }
 
+@keyframes rotation-up{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotation-down{
+    0%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 /* 
     FOOTER
