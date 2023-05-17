@@ -26,6 +26,11 @@ body{
     margin: 0 auto;
 }
 
+.big-container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
 .my-row{
     display: flex;
     flex-wrap: wrap;
@@ -49,10 +54,6 @@ body{
 
 .col-8{
     width: calc((100% / 12) * 8)
-}
-
-.col-20percent{
-    width: 20%;
 }
 
 .circle{
@@ -495,7 +496,7 @@ main .trial{
 }
 
 main .trial .col-6{
-    padding: 30px;
+    padding: 30px 0;
 }
 
 main .trial .col-6:last-of-type{
@@ -538,7 +539,9 @@ main .faq span{
     float: right;
     margin-right: 30px;
     font-size: 0.8em;
+    cursor: pointer;
 }
+
 /* 
     FOOTER
 */
@@ -551,12 +554,44 @@ footer .full-width{
     background-color: #000000;
 }
 
-/* 
-    DEBUG
-*/
+footer .full-width .my-row{
+    justify-content: space-between;
+}
 
-.debug footer .container div > div{
-    background-color:aquamarine;
-    min-height: 200px;
-    border: 2px dashed black;
+footer .footer-col{
+    width: auto;
+    padding: 70px 0;
+}
+
+footer .footer-col h4{
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+footer .footer-col li{
+    list-style: none;
+    font-size: 0.8em;
+    line-height: 30px; 
+    cursor: pointer;
+}
+footer .footer-col h4:hover,
+footer .footer-col li:hover{
+    text-decoration: underline;
+}
+
+footer .tail hr{
+    width: 10%;
+    margin: 40px 0;
+    border: 1px solid lightgray;
+}
+
+footer .tail h4{
+    color: rgb(158, 156, 156);
+    padding-bottom: 50px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+footer .tail h4:hover{
+    text-decoration: underline;
 }
