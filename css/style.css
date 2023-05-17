@@ -422,30 +422,51 @@ main .col-8 > a:visited{
 
 main .companies .col-4 .my-row .col-6{
     height: calc(100vw / 6);
+    position: relative;
 }
 
 main .companies .col-4 .my-row .col-6 img{
     filter: invert(1);
     width: 50%;
-    display:zblock;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
 }
 
-main .companies .col-4 .my-row .col-6:first-of-type{
+main .companies .col-4:first-of-type .my-row .col-6:first-of-type{
     border: 15px solid #D1E9CD;
     background-color: #A2D39B;
 }
 
-main .companies .col-4 .my-row .col-6:nth-of-type(2){
+main .companies .col-4:first-of-type .my-row .col-6:nth-of-type(2){
     background-color: #61082B;
 }
 
-main .companies .col-4 .my-row .col-6:nth-of-type(3){
+main .companies .col-4:first-of-type .my-row .col-6:nth-of-type(3){
     background-color: #0093CE;
 }
 
-main .companies .col-4 .my-row .col-6:nth-of-type(4){
+main .companies .col-4:first-of-type .my-row .col-6:nth-of-type(4){
     background-color: #FF1C1C;
+}
+
+main .companies .col-4:last-of-type .my-row .col-6:first-of-type{
+    background-color: #D5001F;
+}
+
+main .companies .col-4:last-of-type .my-row .col-6:nth-of-type(2){
+    background-color: #B4D0E7;
+}
+
+main .companies .col-4:last-of-type .my-row .col-6:nth-of-type(3){
+    background-color: #0D2481;
+}
+
+main .companies .col-4:last-of-type .my-row .col-6:nth-of-type(4){
+    background-color: #FFD830;
 }
 
 main .companies .col-4:nth-of-type(2){
@@ -467,8 +488,57 @@ main .companies .col-4:nth-of-type(2) p{
 margin-bottom: 30px;
 }
 
+/* FREE TRIAL */
 
+main .trial{
+    background-color: #B4D0E7;
+}
 
+main .trial .col-6{
+    padding: 30px;
+}
+
+main .trial .col-6:last-of-type{
+    text-align: center;
+
+}
+
+main .trial .col-6 h3{
+    font-size: 2.5em;
+    margin: 50px 0;
+}
+
+main .trial .col-6 button{
+    margin: 50px 0;
+    color: black;
+    background-color: #FFFFFF;
+    border: 1px solid white;
+}
+
+main .trial .col-6 button:hover{
+    border: 1px solid black;
+}
+
+/* FAQ */
+
+main .faq h2{
+    margin-top: 50px;
+}
+
+main .faq hr{
+    margin: 30px 0;
+}
+
+main .faq div:last-of-type hr:last-of-type{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+main .faq span{
+    float: right;
+    margin-right: 30px;
+    font-size: 0.8em;
+}
 /* 
     FOOTER
 */
