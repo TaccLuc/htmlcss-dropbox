@@ -638,7 +638,6 @@ footer .footer-col{
 
 footer .footer-col h4{
     padding: 20px 0;
-    cursor: pointer;
 }
 
 footer .footer-col li{
@@ -647,7 +646,12 @@ footer .footer-col li{
     line-height: 30px; 
     cursor: pointer;
 }
-footer .footer-col h4:hover,
+
+footer .footer-col li a{
+    text-decoration: none;
+    color: white;
+}
+
 footer .footer-col li:hover{
     text-decoration: underline;
 }
