@@ -21,11 +21,6 @@ body{
     margin: 0 auto;
 }
 
-.small-container{
-    width: 70%;
-    margin: 0 auto;
-}
-
 .big-container{
     width: 1400px;
     margin: 0 auto;
@@ -122,6 +117,10 @@ body{
     border-radius: 20px;
 }
 
+.col-padding{
+    padding: 40px;
+}
+
 /* 
     HEADER
 */
@@ -181,20 +180,25 @@ main img{
     width: 100%;
 }
 
-main .container{
-    padding: 20px;
-}
-
 /* JUMBOTRON */
 
-.jumbotron{
+
+main .full-width:first-of-type{
+    background-color: #B4D0E7;
+    margin-bottom: 150px;
+}
+
+main .jumbo-container{
     position: relative;
     top: 100px;
 }
 
-main .full-width:first-of-type{
-    background-color: #B4D0E7;
-    margin-bottom: 100px;
+main .my-row.jumbotron{
+    margin-top: 50px;
+}
+
+main .my-row.jumbotron p{
+    font-size: 1.2em;
 }
 
 main .full-width:first-of-type button{
@@ -211,6 +215,7 @@ main .button.button-small + div{
     font-size: 0.8em;
     margin-bottom: 50px;
 }
+
 /* BUSINESS PLANS */
 
 main h2:first-of-type{
@@ -243,44 +248,62 @@ main .radio-input #yearly:checked ~ .circle:last-of-type{
     border: 3px solid #2F86FF;
 }
 
+
+main .business-plans{
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
 main .business-plans .col-4{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    width: calc((90% / 12) * 4);
+    border: 1px solid black;
 }
 
-main .business-plans:nth-of-type(4){
-    border-bottom: 1px solid black;
-    margin-bottom: 30px;
-}
-main .business-plans .col-4 > h4{
+main .business-plans .col-4 .column-title{
     text-align: center;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 5px;
+    padding: 10px;
     font-size: 0.8em;
-    width: 100%;
 }
 
-main .business-plans h3{
-    padding: 20px 20px 5px 0;
+main .business-plans .col-4 .col-padding h3{
+    margin-bottom: 20px;
 }
 
-main .business-plans  div > div{
-    padding: 10px 0;
-    font-size: 0.9em;
-}
-
-main .business-plans  div .price{
+main .business-plans .price{
     display: block;
     font-weight: 700;
+    font-size: 0.8em;
 }
 
-main .business-plans  div .plan-billing{
+main .business-plans .plan-billing{
     font-weight: 100;
+    font-size: 0.8em;
+}
+
+main .business-plans ul{
+    margin-top: 30px;
+}
+
+main .business-plans ul li {
+    padding: 10px 0;
+    list-style-type: none;
+    font-size: 0.7em;
+}
+main .business-plans ul li i{
+    float: left;
+    clear:both;
+    height: 30px;
+    margin-right: 5px;
+    line-height: 15px;
 }
 
 main .business-plans  div .trial-button{
     padding: 30px 0;
+}
+
+main .business-plans  div .trial-button + div{
+    font-size: 0.8em;
 }
 
 main .business-plans  div .trial-button button{
@@ -293,17 +316,12 @@ main .business-plans div hr{
     border: 1px solid lightgray;
 }
 
-main .business-plans h4:last-of-type{
-    padding: 10px 0 15px 0;
+main .business-plans .selling-points{
+    font-size: 0.8em;
 }
 
-main .business-plans .fa-check{
-    color: #2F86FF;
-    float: left;
-    clear:both;
-    height: 40px;
-    margin-right: 5px;
-    line-height: 20px;
+main .business-plans .selling-points + ul li i{
+    color: #0061FF;
 }
 
 /* CONTACT US */
@@ -401,19 +419,19 @@ main .dp-bsn .col-4 p{
     margin-bottom: 30px;
 }
 
-main .col-8{
+main .bsn.col-8{
     margin-bottom: 100px;
 }
 
-main .col-8 > h2{
+main .bsn.col-8 > h2{
     font-size: 3em;
 }
 
-main .col-8 > a{
+main .bsn.col-8 > a{
     color: #2F86FF; 
 }
 
-main .col-8 > a:visited{
+main .bsn.col-8 > a:visited{
     color: #2F86FF; 
 }
 
@@ -524,6 +542,10 @@ main .trial .col-6 button:hover{
 
 main .faq h2{
     margin-top: 50px;
+}
+
+main .faq div{
+    font-weight: 700;
 }
 
 main .faq hr{
