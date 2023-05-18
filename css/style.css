@@ -173,6 +173,40 @@ header li a:hover{
     color:#2F86FF;
 }
 
+header .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    width: 150px;
+}
+
+header .dropdown-content li{
+    width: 100%;
+    padding: 15px;
+}
+
+header .dropdown-content:last-of-type li{
+    text-align: left;
+}
+
+header .dropdown-content li:hover{
+    background-color: #f9f9f9;
+}
+
+header .dropdown-content li:hover a{
+    color:#2F86FF;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* 
     MAIN
