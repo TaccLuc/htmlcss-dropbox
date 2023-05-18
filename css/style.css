@@ -11,6 +11,9 @@
 /* 
     GENERAL
 */
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -104,15 +107,18 @@ body{
     background-color: rgb(238, 235, 235);
 }
 
-.download-button{
+.scroll-button{
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: inline-block;
     padding: 15px;
 }
+.scroll-button a{
+    color: black;
+}
 
-.download-button:hover{
+.scroll-button:hover{
     background-color: rgb(238, 235, 235);
     border-radius: 20px;
 }
