@@ -625,10 +625,12 @@ main .faq ul{
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 main .faq input:checked ~ ul{
     max-height: 300px;
+    opacity: 1;
 }
 
 main .faq input:checked ~ label > i{
