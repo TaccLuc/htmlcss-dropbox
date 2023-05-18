@@ -13,7 +13,6 @@
 }
 
 
-
 /* 
     MAIN
 */
@@ -161,20 +160,54 @@ main .products .col-3 h4{
     margin-bottom: 0;
 }
 
+/* ARTICLES */
 
-
-
-
-
-/* 
-    DEBUG
-*/
-.debug .container{
-    min-height: 300px;
+main .background-black h2{
+    text-align: center;
+    color: white;
+    padding: 50px 0;
 }
 
-.debug .container .my-row > div:not(:first-of-type){
-    background-color:blueviolet;
-    min-height: 200px;
-    border: 2px dashed black;
+main .articles{
+    justify-content: space-between;
+}
+
+main .articles .col-3{
+    width: calc((95% / 12) * 3);
+}
+
+main .articles .col-3 > *{
+    color: white;
+}
+
+
+main .articles .col-3.my-row > div{
+    width: 100%;
+}
+
+main .articles .col-3 .p-row{
+    padding: 40px 0;
+}
+
+main .articles .col-3 h4:first-of-type{
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+main .articles .col-3 p{
+    line-height: 30px;
+    font-weight: 200;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+main .articles .col-3 a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+}
+
+main .articles .col-3 a:hover{
+    color: white;
+    border-bottom: 1px solid white;
 }
