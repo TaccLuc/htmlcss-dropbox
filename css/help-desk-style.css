@@ -1,10 +1,29 @@
 /* 
+    GENERAL
+*/
+
+.background{
+    background-color: #F7F5F2;
+    width: 100%;
+}
+
+.background-black{
+    background-color: black;
+    width: 100%;
+}
+
+
+
+/* 
     MAIN
 */
+
+/* MAIN HEADER */
 
 main .main-header .col-6:first-of-type{
     background-color: black;
     position: relative;
+    padding: 100px;
 }
 
 main .main-header .col-6:first-of-type h1{
@@ -20,6 +39,7 @@ main .main-header .col-6:first-of-type h1{
 main .main-header .col-6:last-of-type{
     background-color: #B4C8E1;
     position: relative;
+    padding: 100px;
 }
 
 main .main-header .col-6:last-of-type span{
@@ -32,24 +52,80 @@ main .main-header .col-6:last-of-type span{
     transform: translate(-50%, -50%);
 }
 
+/* SEARCHBAR & NAV */
 
+main .main-nav{
+    padding: 50px 0;
+}
+
+main .searchbar{
+    position: relative;
+}
+
+main .searchbar input{
+    width: 100%;
+    display: block;
+    height: 50px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+main .searchbar i{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+main .main-nav .my-row{
+    justify-content: space-between;
+
+}
+
+main .main-nav .col-4{
+    width: calc((95% / 12) * 4)
+
+}
+
+main .main-nav .col-4 img{
+    padding: 20px;
+    background-color: white;
+
+}
+
+main .main-nav .col-4 h2{
+    font-size: 1.8em;
+    padding-bottom: 0;
+}
+
+main .main-nav .col-4 hr{
+    margin-bottom: 30px;
+}
+
+main .main-nav .col-4 ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+main .main-nav .col-4 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main .main-nav .col-4 ul li a:hover{
+    text-decoration: underline;
+    color: #2F86FF;
+}
 
 /* 
     DEBUG
 */
-
-.debug .my-row:first-of-type .col-6{
-    min-height: 200px;
-    border: 2px dashed black;
-}
-
 .debug .container{
-    background-color: aquamarine;
-    min-height: 200px;
-    border: 2px dashed black;
+    min-height: 300px;
 }
 
-.debug .container .my-row > div{
+.debug .container .my-row > div:not(:first-of-type){
     background-color:blueviolet;
     min-height: 200px;
     border: 2px dashed black;
